@@ -29,6 +29,9 @@ function intersection(a, b) {
   */
 
   // Solution from Copilot
+  // ? Filters the elements of array a to only include those that are also in array b
+  // ? Then removes duplicates by creating a new Set from the filtered array
+  // ? Finally, returns the Set as an array
   return [...new Set(a.filter((element) => b.includes(element)))];
 }
 
